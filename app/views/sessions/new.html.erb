@@ -1,0 +1,4 @@
+ <% if @users %>
+logged in as:<%= @user.email %>
+<%= button_to "signout", destroy_user_session_path, method: :delete %>
+<% end %>
